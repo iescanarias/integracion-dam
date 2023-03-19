@@ -14,7 +14,7 @@ será utilizado el proyecto obtenido.*
 
 ## ANÁLISIS DEL SOFTWARE
 
-*[Tiene que abrir una aplicación la cual registra los datos escritos, en un base de datos para cuando se vuelva abrir las aplicación esta los cargue, va a tener bastantes filtros para poder gestionar de mejor manera las notas, un ejemplo de como quedaría sería este] Determinar de forma genérica lo que tiene que hacer el software y cuáles son los requisitos que debe cumplir.*
+*[Tiene que abrir una aplicación la cual registra los datos escritos, en un base de datos para cuando se vuelva abrir la aplicación esta los cargue, va a tener bastantes filtros para poder gestionar de mejor manera las notas, un ejemplo de como quedaría sería este] Determinar de forma genérica lo que tiene que hacer el software y cuáles son los requisitos que debe cumplir.*
 
 *Si el proyecto trata sobre la adaptación o ampliación de algún software existente, se deberá aportar información sobre el mismo (documentos electrónicos, direcciones URL, etc.), delimitando claramente cuál será el trabajo que se realizará y que funcionalidad ya está implementada.*
 
