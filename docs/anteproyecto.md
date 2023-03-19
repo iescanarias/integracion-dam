@@ -21,7 +21,8 @@ será utilizado el proyecto obtenido.*
 > *Incuir los diagramas necesarios*
 
 ![image](https://user-images.githubusercontent.com/114065586/226199774-3f9edd04-1310-4d17-88b8-494ade24e91d.png)
-![image](https://user-images.githubusercontent.com/114065586/226200080-90c4ce36-e7b1-4669-b827-9a6eb0816e7d.png)
+
+![image](https://user-images.githubusercontent.com/114065586/226200107-187418a4-493c-4df4-9216-1057085cee6a.png)
 
 ## DISEÑO DEL SOFTWARE
 
