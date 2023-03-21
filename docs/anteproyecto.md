@@ -8,7 +8,7 @@
 
 ## PREANALISIS DE LO EXISTENTE (Opcional)
 
-*[TODO] Si procede, se informará brevemente sobre el funcionamiento del sistema actual. El que vamos a reemplazar o a mejorar. Este sistema no tiene por qué estar necesariamente automatizado pudiendo realizarse actualmente de forma manual por personas.*
+*Ya existen este tipo de programas la idea a implementar es hacerlo de una manera mas cómoda para el usuario a la hora de gestionar sus notas y este pueda cambiarlas y gestionarlas de la forma mas cómoda posible*
 
 ## ANÁLISIS DEL SOFTWARE
 
