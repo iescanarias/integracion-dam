@@ -24,7 +24,7 @@
 
 ## DISEÑO DEL SOFTWARE
 
-*Se implementara como una aplicación la cual puedes descargar de una página y me gustaría poder montar un servicio web pero tendría que informarme para ver si es asequible, este se haría con php.*
+*Se implementara como una aplicación(escritorio) la cual puedes descargar de una página y me gustaría poder montar un servicio web pero tendría que informarme para ver si es asequible, este se haría con php.*
 
 ## ESTIMACIÓN DE COSTES
 
