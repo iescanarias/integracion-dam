@@ -24,10 +24,9 @@
 
 ## DISEÑO DEL SOFTWARE
 
-*[TODO] Propuesta de posibles opciones de implementación del software que hay que construir, determinar cómo se va a llevar a cabo la implementación.*
-
->  *Incluir los diagramas necesarios.*
+*Se implementara como una aplicación la cual puedes descargar de una página y me gustaría poder montar un servicio web pero tendría que informarme para ver si es asequible, este se haría con php.*
 
 ## ESTIMACIÓN DE COSTES
 
-*[Por ahora ningún coste] Estimar el coste que representará la creación del proyecto. Esta estimación será temporal y/o económica si procede (costes de contratación de servicios en la nube, por ejemplo).*
+Se usarán alrededor de 25 horas para generar el modelo y obtener otros requisitos necesarios, para desarrollar el programa se usarán alrededor de 85h (con 40h de margen por si hubiera complicaciones).
+Y teniendo como referencia que a 30h semanales por 4 semanas (120h) son 1216€ (suministrado por la empresa), y dado que no hay necesidad a priori de gestionar almacenamiento en la nube, saldría por 1088€*
