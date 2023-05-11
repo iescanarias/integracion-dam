@@ -1,0 +1,174 @@
+{% extends "base.html.twig" %}
+
+
+{% block body %}
+	<section class="vh-100" style="background-color: #2779e2;">
+		{% if tarea == null %}
+			<h1 class="text-white mb-4">
+				Esa tarea no existe</h1>
+		{% else %}
+			<div class="container h-100">
+				<div class="row d-flex justify-content-center align-items-center h-100">
+					<form method="POST" action="{{path('app_actualizar_start', {id:tarea.id})}}" enctype="multipart/form-data">
+						<div class="col-xl-9">
+
+							<h1 class="text-white mb-4">Editar tarea</h1>
+
+							<div class="card" style="border-radius: 15px;">
+								<div class="card-body">
+
+									<div class="row align-items-center pt-4 pb-3">
+										<div class="col-md-3 ps-5">
+
+											<h6 class="mb-0">Titulo</h6>
+
+										</div>
+										<div class="col-md-9 pe-5">
+
+											<input type="text" name="titulo" class="form-control form-control-lg" value="{{tarea.titulo}}"/>
+
+										</div>
+									</div>
+
+									<hr class="mx-n3">
+
+									<div class="row align-items-center py-3">
+										<div class="col-md-3 ps-5">
+
+											<h6 class="mb-0">Descripción</h6>
+
+										</div>
+										<div class="col-md-9 pe-5">
+
+											<textarea class="form-control" name="descripcion" rows="3" placeholder="Descripción de la tarea">
+												{{tarea.descripcion}}
+											</textarea>
+
+										</div>
+									</div>
+
+									<hr class="mx-n3">
+
+									<div class="row align-items-center py-3">
+										<div class="col-md-3 ps-5">
+
+											<h6 class="mb-0">Prioridad</h6>
+
+										</div>
+										<div class="col-md-9 pe-5">
+
+											<select class="form-control" name="prioridad">
+												<option value="baja">
+													Baja
+												</option>
+												<option value="media">
+													Media
+												</option>
+												<option value="alta">
+													Alta
+												</option>
+											</select>
+
+										</div>
+									</div>
+
+									<hr class="mx-n3">
+
+									<div class="row align-items-center py-3">
+										<div class="col-md-3 ps-5">
+
+											<h6 class="mb-0">Completada</h6>
+
+										</div>
+										<div class="col-md-9 pe-5">
+											{% if tarea.completada %}
+												<input type="checkbox" name="completado" value="completado" checked>
+											{% else  %}
+												<input type="checkbox" name="completado" value="completado">
+											{% endif %}
+										</div>
+									</div>
+
+									<hr class="mx-n3">
+
+									<div class="row align-items-center py-3">
+										<div class="col-md-3 ps-5">
+
+											<h6 class="mb-0">Fecha Máxima</h6>
+
+										</div>
+										<div class="col-md-9 pe-5">
+											<input type="date" name="fechaMaxima" id="fechaMaxima" class="form-control" value="01-01-2000">
+										</div>
+									</div>
+
+									<hr class="mx-n3">
+
+									<div class="row align-items-center py-3">
+										<div class="col-md-3 ps-5">
+
+											<h6 class="mb-0">Recordatorio</h6>
+
+										</div>
+										<div class="col-md-9 pe-5">
+											<input type="date" name="recordatorio" class="form-control">
+										</div>
+									</div>
+
+									<hr class="mx-n3">
+
+									<div class="row align-items-center py-3">
+										<div class="col-md-3 ps-5">
+
+											<h6 class="mb-0">Fichero</h6>
+
+										</div>
+										<div class="col-md-9 pe-5">
+
+											<input type="file" name="fichero" accept=".csv, .exe, .txt" class="form-control">
+
+											{% if tarea.file %}
+											<a href="{{path('app_descarga_start', {id:tarea.id})}}" class="form-control"> {{tarea.file}} </a>
+											{% endif %}
+										</div>
+									</div>
+
+
+									{# <hr class="mx-n3">
+																		
+																		            <div class="row align-items-center py-3">
+																		              <div class="col-md-3 ps-5">
+																		
+																		                <h6 class="mb-0">Upload CV</h6>
+																		
+																		              </div>
+																		              <div class="col-md-9 pe-5">
+																		
+																		                <input class="form-control form-control-lg" id="formFileLg" type="file" />
+																		                <div class="small text-muted mt-2">Upload your CV/Resume or any other relevant file. Max file
+																		                  size 50 MB</div>
+																		
+																		              </div>
+																		            </div> #}
+
+									<hr class="mx-n3">
+
+									<div class="px-5 py-4">
+										<button type="submit" class="btn btn-primary btn-lg">Guardar</button>
+										<a href="{{path('app_eliminartarea_start', {id:tarea.id})}}" class="text-danger" data-mdb-toggle="tooltip" title="Borrar tarea">
+											<button type="button" class="btn btn-danger btn-lg">Borrar</button>
+										</a>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+	{% endif %}
+
+{% endblock %}
