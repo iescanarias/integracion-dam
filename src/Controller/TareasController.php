@@ -9,7 +9,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class TareasController extends AbstractController{
     #[Route("/tareas")]
     public function start(TareaRepository $tareaRepository, Request $request){
-
+       $this->denyAccessUnlessGranted("IS_AUTHENTICATED_FULLY");
        $filtro = $request->request->get("filtro");
         $orden = $request->request->get("orden");
 

@@ -10,6 +10,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class CrearTareaController extends AbstractController{
     #[Route("/tareas/crear/{titulo}")]
     public function start(string $titulo ,TareaRepository $tareaRepository){
+        $this->denyAccessUnlessGranted("IS_AUTHENTICATED_FULLY");
         $tarea = new Tarea();
         $tarea->setTitulo($titulo);
         $tarea->setPrioridad("baja");
