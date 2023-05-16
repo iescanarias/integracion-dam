@@ -17,6 +17,9 @@ services:
       - '3306:3306' 
       # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
       # - ./docker/db/data:/var/lib/postgresql/data:rw
+    volumes:
+      - db_data:/var/lib/mysql
+
 
 ###< doctrine/doctrine-bundle ###
   phpmyadmin:
@@ -32,5 +35,5 @@ services:
 
 volumes:
 ###> doctrine/doctrine-bundle ###
-  database_data:
+  db_data:
 ###< doctrine/doctrine-bundle ###
